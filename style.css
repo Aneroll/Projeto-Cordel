@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root {
+    /*Usando uma variavel para colocar as fontes*/
+    /*Fontes importadas*/
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+/* imagens gratuitas pixabay.com */
+* {
+    padding: 0px;
+    /* zerar o preenchemento padrão */
+    margin: 0px;
+    /* zerar a margem padrão */
+    font-size: 1em;
+
+}
+
+html,
+body {
+    min-height: 100vh;
+    /*o minimo da altura*/
+    font-family: var(--font1);
+
+
+
+}
+
+header {
+
+    background-color: black;
+    /* Fundo do cabeçalho preto*/
+    color: white;
+    /* cor da letra */
+    text-align: center;
+    /* centralizando o cabeçalho*/
+
+
+
+
+
+}
+
+header>h1 {
+    font-size: 10vh;
+    /*10% da lagura da tela*/
+    font-family: var(--font2);
+    padding-top: 50px;
+    /* preenchimento a cima do titulo de nivel 1*/
+    font-variant: small-caps;
+    /* Variação de fontes (letra maiuscula menos chamativa)*/
+
+
+}
+
+header>p {
+
+    padding-bottom: 50px;
+
+}
+
+header a,
+footer a {
+    color: white;
+    /*cor do link*/
+    text-decoration: none;
+    /*tirar o sublinhado */
+    font-weight: bolder;
+    /*colocar em negrito*/
+}
+
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
+    /*colocar o sublinhado*/
+
+}
+
+section {
+    /*todas as seções*/
+    font-family: var(--font3);
+    font-size: 3.5vh;
+    /* tamanho das fontes*/
+    padding-top: 10vh;
+    /* espaçamento em cima*/
+    padding-bottom: 10vh;
+    /*espaçamento em baixo*/
+    line-height: 2em;
+    /*5% da largura da tela*/
+    padding-left: 30px;
+    /* espaçamento na lateral esquerda*/
+
+}
+
+section.normal {
+    /*Cores nas seções*/
+    background-color: white;
+    color: black;
+
+}
+
+section.img>p {
+    /*Criar uma caixa para o paragrafo*/
+    padding: 5px;
+    display: inline-block;
+    /*Adaptar conforme o pargrafo*/
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1 px 0pc black;
+}
+
+section.img {
+    background-color: rgba(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    /*sombra interna*/
+    background-size: cover;
+    /*cobrir a imagem*/
+    background-attachment: fixed;
+}
+
+section>p {
+    padding-bottom: 2em;
+}
+
+section#img1 {
+    background-image: url('pacote-d012/imagens/background001.jpg');
+    background-position: center center;
+
+}
+
+section#img2 {
+    background-image: url('pacote-d012/imagens/background002.jpg');
+
+
+
+}
+
+footer {
+    background-color: black;
+    /*Fundo do rodapé preto*/
+    text-align: center;
+    /*Centralizar o texto*/
+    color: white;
+    /*cor de texto branca*/
+    padding: 10px;
+}
